@@ -146,6 +146,8 @@ def Download(single_page):
             '招股说明书',
             '招股意向书',
         ]
+        allowed_list = ['2018年年度报告（更新后）','2018年年度报告']
+        allowed_list_2=[]
         title = i['announcementTitle']
         allowed = title in allowed_list
         if '确认意见' in title:
